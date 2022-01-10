@@ -1,0 +1,424 @@
+@keyframes pipeTilt{
+ 
+ from{
+   opacity: 0;
+ }
+ to{
+   opacity: 1;
+ }
+}
+
+
+.iconify.gear{
+  margin-bottom: -5px;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  background: #000;
+  position:relative;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  
+}
+.socialMidiaBottom{
+  margin-top: 100px;
+  padding:10px;
+  display:flex;
+}
+.iconify{
+  
+  font-size: 2rem;
+  color:#06d6a4;
+  
+}
+header{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position:fixed;
+ z-index: 999;
+  background:#000;
+ 
+}
+#main{
+  height:100vh;
+}
+#logo{
+  font-size: 1.3rem;
+  color:#fff;
+  margin-left:10px;
+}
+.green{
+  color:springgreen;
+  
+}
+.purple{
+  color:purple;
+}
+.buttonPortifolio{
+  width:180px;
+  height:50px;
+  border: 2px solid springgreen;
+  border-radius: 30px;
+  background:#0FFF0012;
+  margin-top:10px;
+  color:#fff;
+  text-shadow: 1px 2px 3px #000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttonPortifolio a{
+  font-size: 1.3rem;
+}
+.buttonPortifolio:hover{
+  background:#005B2A;
+}
+/*parallax*/
+section.parallax{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height:100vh!important;
+  width:100vw;
+}
+
+/*end parallax*/
+.mainPage{
+  background:url("_image/mainPage.jpg");
+ display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-size:1.3rem;
+  word-wrap: break-word;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.aboutMe{
+  background: linear-gradient(0, #16C79A, #6998AB, #406882, #1A374D);
+  color:#fff;
+  padding:20px;
+  text-align: center;
+ visibility: hidden;
+ display:flex;
+ flex-direction:column;
+ align-items: center;
+ justify-content: space-around;
+  
+  
+}
+.aboutMe h2{
+  margin-top:50px;
+  margin-bottom:20px;
+  color:#000;
+}
+.myProjects{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  height:100vh;
+  background:url(aboutMe.jpg);
+}
+.myProjects h2{
+  
+  padding:10px;
+  margin-top:60px;
+  text-shadow: 1px 1px 1px #06d6a4;
+}
+.myProjects p{
+
+  color:#fff;
+  visibility: hidden;
+
+  padding:10px;
+  margin:0 0;
+}
+.contactMe{
+  background: linear-gradient(0, #16C79A, #6998AB, #406882, #1A374D);
+  text-align: center;
+}
+.contactMe h2{
+  padding:70px;
+}
+.formulario{
+  width:300px;
+  border:1px solid #06d6a4;
+  margin:30px auto;
+  padding:20px;
+  border-radius: 12px;
+  background:rgba(6,214,164,.3);
+  backdrop-filter: blur(2px);
+  
+}
+/**/
+.formulario fieldset{
+  display:flex;
+  justify-content: space-around;
+  border:none;
+  flex-direction: column;
+  
+}
+.formulario label{
+  margin:5px auto;
+ 
+  display:flex;
+}
+.formulario input{
+  padding:5px;
+}
+#message{
+  height:20vh;
+  width:100%;
+  margin:15px 0;
+  padding:10px;
+ 
+}
+.areaProjects{
+  
+ 
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100vw;
+  height:60vh;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.areaProjects h2{
+  margin:20px;
+  
+}
+.project{
+ 
+  margin:0 40px;
+  height:300px;
+  min-width:80vw;
+  border:1px solid #06d6a4;
+  box-shadow: 1px 1px 9px #06d6a4;
+  display:flex;
+  justify-content: center;
+  background:rgba(0, 0, 0, .3);
+  backdrop-filter: blur(2px);
+  color:#fff;
+  transform: skewX(4deg);
+  transform:skewY(-2deg);
+  scroll-snap-align: center;
+  
+}
+.project-1 {
+    
+   background:url("nuclone.jpg");
+   background-size:cover;
+  
+}
+.project-1:hover{
+  transform: skewX(0deg);
+  transform:skewY(0deg);
+  transition: transform 1s ease-in;
+}
+.project-1, .project-2,.project-3, .project-4{
+ 
+  position: relative;
+  
+ 
+}
+
+.paragrafo{
+  visibility: hidden;
+  margin-bottom:10px;
+}
+h4{
+  font-size: 1.rem;
+  
+}
+h5{
+  font-size:1.5rem;
+  color:#fff;
+ margin-top: 100px;
+}
+h5::after{
+  content: "|";
+  animation: pipeTilt 1s infinite;
+  
+}
+h2{
+  color:#fff;
+}
+.menuMobile{
+  width: 50px;
+  height:50px;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border:4px solid springgreen;
+  border-radius: 50%;
+  padding:3px;
+  display:none;
+  
+ 
+ 
+}
+.menuMobile div{
+  height:4px;
+  width:30px;
+  background:springgreen;
+  box-shadow: 1px 1px 1px green;
+}
+
+.listMenu{
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+  letter-spacing: 3px;
+  list-style:none;
+  transition:all 1s ease-in;
+ 
+ 
+}
+.listMenu li a {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#menu li{
+  margin-right: 30px;
+  
+}
+
+.parallax-1{
+  background:url("_image/parallax3.jpg");
+  
+}
+.parallax-2{
+  background:url("_image/parallax2.jpg");
+}
+
+.rodape{
+  background:#000;
+  color:#fff;
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height:20vh;
+  padding:20px;
+  border-top:2px solid #06d6a4;
+  visibility:hidden;
+}
+
+/*responsivo*/
+@media (max-width:900px)
+{
+  .iconify{
+    opacity: 1;
+  }
+#menu{
+  /*display:none;*/
+}
+header{
+  display:flex;
+  
+}
+.menuMobile{
+  display: flex;
+  margin-left: 100px;
+  z-index: 999;
+}
+.listMenu{
+  
+ position: fixed;
+ list-style: none;
+ flex-direction: column;
+ border-radius: 20px 0px 0px  0px;
+ background:#000;
+ height:100vh;
+ width:100vw;
+ left:45%;
+ top:0;
+ transform: translateX(100%);
+ box-shadow:1px -1px 3px green;
+}
+.listMenu a{
+  font-size: 1.2rem;
+
+}
+.listMenu li{
+ display:flex;
+ justify-content: left;
+  margin-bottom: 12px;
+  width: 200px;
+  align-items: center;
+  margin-left:-60px;
+
+  
+  
+}
+.iconify{
+  margin-right: 10px;
+  margin-bottom:-8px;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:'home' 'aboutMe' 'skills' 'projects' 'contact';
+}
+a{
+  font-size: 2rem;
+}
+.listMenu.active{
+  transform: translateX(0);
+  
+  background:#000;
+  transition: all .5s ease-in-out;
+  
+}
+.line1.active{
+  transform: rotate(-45deg) translate(-7px, 5px);
+  transition: all .4s ease-in-out;
+}
+.line2.active{
+  transform: rotate(45deg) translate(-7px, -7px);
+  transition: all .4s ease-in-out;
+}
+
+h5.active::after{
+  content:"";
+}
+
+
+.rodape{
+  background:#000;
+  color:#fff;
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height:30vh;
+  padding:20px;
+  border-top:2px solid #06d6a4;
+  visibility:hidden;
+}
+
+/*fim media*/
+}
+
+
