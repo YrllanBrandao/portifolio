@@ -207,7 +207,7 @@ section.parallax{
  
   margin:0 40px;
   height:300px;
-  min-width:80vw;
+  min-width:300px;
   border:1px solid #06d6a4;
   box-shadow: 1px 1px 9px #06d6a4;
   display:flex;
