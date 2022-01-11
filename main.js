@@ -93,3 +93,6 @@ setInterval(animateH5, 5000);
      
    })
   
+  
+  
+  console.log(window.innerHeight + "-" + window.innerWidth)

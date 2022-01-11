@@ -21,6 +21,7 @@ body, html{
   background: #000;
   position:relative;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a{
   text-decoration: none;
@@ -109,7 +110,9 @@ section.parallax{
 }
 
 .aboutMe{
-  background: linear-gradient(0, #16C79A, #6998AB, #406882, #1A374D);
+  background: #232C28;
+  background-size: cover;
+  background-position: center center;
   color:#fff;
   padding:20px;
   text-align: center;
@@ -124,14 +127,16 @@ section.parallax{
 .aboutMe h2{
   margin-top:50px;
   margin-bottom:20px;
-  color:#000;
+  color:#fff;
 }
 .myProjects{
   display:flex;
   flex-direction: column;
   text-align: center;
   height:100vh;
-  background:url(aboutMe.jpg);
+  background: url("_image/Sprinkle.svg");
+  background-size: cover;
+  background-position: center center;
 }
 .myProjects h2{
   
@@ -148,7 +153,9 @@ section.parallax{
   margin:0 0;
 }
 .contactMe{
-  background: linear-gradient(0, #16C79A, #6998AB, #406882, #1A374D);
+  background: #232C28;
+  background-size: cover;
+  background-position: center center;
   text-align: center;
 }
 .contactMe h2{
@@ -189,7 +196,6 @@ section.parallax{
 }
 .areaProjects{
   
- 
   display:flex;
   flex-direction: row;
   justify-content: space-between;
@@ -198,9 +204,11 @@ section.parallax{
   height:60vh;
   overflow: auto;
   scroll-snap-type: x mandatory;
+  
 }
 .areaProjects h2{
   margin:20px;
+  
   
 }
 .project{
@@ -218,18 +226,14 @@ section.parallax{
   transform: skewX(4deg);
   transform:skewY(-2deg);
   scroll-snap-align: center;
-  
+  z-index: 10;
 }
-.project-1 {
-    
-   background:url("nuclone.jpg");
-   background-size:cover;
+.project:hover,.project iframe:hover
+{
+  transform: skewX(0);
+  transform:skewY(0);
+  z-index: 50;
   
-}
-.project-1:hover{
-  transform: skewX(0deg);
-  transform:skewY(0deg);
-  transition: transform 1s ease-in;
 }
 .project-1, .project-2,.project-3, .project-4{
  
